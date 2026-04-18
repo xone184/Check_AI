@@ -1,0 +1,12 @@
+# Mẫu dữ liệu chạy thử VeriScan (xóa dòng này nếu dán vào ô nhập)
+
+Đoạn 1 — định nghĩa phổ biến (thường trùng nguồn mở):
+Trí tuệ nhân tạo (AI) là khả năng của máy tính hoặc hệ thống máy tính thực hiện các tác vụ thường cần trí thông minh của con người, như nhận thức, suy luận, học tập và ra quyết định.
+
+Đoạn 2 — lặp cấu trúc (mosaic / patchwriting):
+Khả năng của máy tính thực hiện các tác vụ thường đòi hỏi trí thông minh con người, ví dụ nhận thức, suy luận, học và quyết định, được gọi là trí tuệ nhân tạo.
+
+Đoạn 3 — nội dung gốc (bài tập nhỏ của sinh viên):
+Trong báo cáo thực tập tại phòng lab KHMT-2024, em đã ghi nhận quy trình thu thập log từ thiết bị IoT, chuẩn hóa timestamp theo UTC+7, và xuất báo cáo tuần bằng Python pandas. Giảng viên nhận xét phần phân tích outlier còn mỏng; em sẽ bổ sung biểu đồ hộp (boxplot) ở phiên bản tiếp theo.
+
+Kết luận: Tài liệu trên cố ý trộn định nghĩa lặp lại với đoạn mô tả cá nhân để bạn thử chức năng highlight đoạn nghi ngờ và nhiều phiên bản viết lại từ Groq.

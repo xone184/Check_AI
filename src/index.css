@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-bg: #f0f2f5;
+  --color-card: #ffffff;
+  --color-primary: #2563eb;
+  --color-danger: #dc2626;
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-text-main: #1e293b;
+  --color-text-sub: #64748b;
+  --color-border: #e2e8f0;
+  --color-sidebar: #f8fafc;
+  
+  --radius-sleek: 8px;
+  --radius-pill: 99px;
+  --radius-card: 16px;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text-main font-sans antialiased;
+  }
+}
+
+.sleek-btn {
+  @apply px-4 py-2 rounded-sleek font-semibold transition-all cursor-pointer text-sm;
+}
+
+.sleek-btn-primary {
+  @apply bg-primary text-white hover:bg-blue-700;
+}
+
+.sleek-btn-outline {
+  @apply bg-white border border-border text-text-main hover:bg-slate-50;
+}
+
+.sleek-card {
+  @apply bg-white border border-border rounded-card shadow-sm;
+}
+
+.source-card {
+  @apply bg-white border border-border rounded-[12px] p-3 mb-2;
+}
+
+.ai-suggestion {
+  @apply bg-green-50/50 border border-dashed border-success rounded-[12px] p-4;
+}
+
+.pulse {
+  @apply w-2 h-2 bg-success rounded-full;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: .5; }
+}
+
+.scan-line {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-primary), transparent);
+  animation: scan 2s linear infinite;
+}
+
+@keyframes scan {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(100px); }
+  100% { transform: translateY(0); }
+}

@@ -1,0 +1,27 @@
+{
+  "setupTasks": [
+    {
+      "name": "Install dependencies",
+      "command": "npm install"
+    }
+  ],
+  "tasks": {
+    "dev": {
+      "name": "Vite dev",
+      "command": "npm run dev",
+      "runAtStart": true,
+      "restartOn": {
+        "files": ["vite.config.ts", "package.json"],
+        "branch": false
+      },
+      "preview": {
+        "port": 3000,
+        "onRunning": "http://localhost:3000"
+      }
+    },
+    "build": {
+      "name": "Production build",
+      "command": "npm run build"
+    }
+  }
+}
